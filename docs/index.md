@@ -1,2 +1,2 @@
 # CogniPilot Developers Guide
-Site currently Under development.
+Site currently Under development, please see our github.
