@@ -1,1 +1,1 @@
-# CogniPilot Documenation
+# CogniPilot Documentation
