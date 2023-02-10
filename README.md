@@ -1,2 +1,1 @@
-# docs
-CogniPilot documentation.
+# CogniPilot Documenation
