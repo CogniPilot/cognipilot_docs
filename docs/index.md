@@ -1,2 +1,3 @@
 # CogniPilot Developers Guide
-Site currently Under development, please see our github.
+
+To get started see [Docker Simulation Tutorial](./getting_started/docker_sim)
