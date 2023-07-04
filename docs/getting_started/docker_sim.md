@@ -1,12 +1,21 @@
 # Docker Simulation Tutorial
 
+## Requirements
+
+* Ubuntu 22.04 host environment
+
+This may work on other environments but only Ubuntu 22.04 is officially supported.
+
 ## Setup SSH keys on Host
 
 * Ensure that you have setup ssh keys on your host computer to be able to clone the CogniPilot repositories: [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ## Setup Docker
 
-* Install the offfical Docker package: [Docker Setup](https://github.com/CogniPilot/docker)
+* Install Docker engine for Ubuntu [Docker Engine Install](https://docs.docker.com/engine/install/ubuntu/)
+
+!!! attention
+    ** Don't forget: [Linux Post Install](https://docs.docker.com/engine/install/linux-postinstall/)**
 
 ```bash
 git clone git@github.com:CogniPilot/docker
