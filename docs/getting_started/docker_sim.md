@@ -7,8 +7,9 @@
 ```bash
 git clone git@github.com:CogniPilot/docker
 cd docker/dream
-docker compose run dream terminator
+./run.sh terminator
 ```
+
 ## Setup Helmet for MrBuggy3 SITL
 
 ```bash
