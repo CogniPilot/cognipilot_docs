@@ -15,7 +15,7 @@ theme:
   name: material
   custom_dir: theme_overrides
   logo: assets/CogniPilotLogoSite.png
-  favicon: assets/CogniPilotLogoFavicon.ico
+  favicon: assets/CogniPilotLogoFavicon.png
   features:
     - content.code.copy
 
