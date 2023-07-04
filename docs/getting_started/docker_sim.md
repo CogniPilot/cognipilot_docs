@@ -79,7 +79,7 @@ Example of simulation running.
 
 ## Select a Mode:
 
-![F310](data/f310.png "F310")
+![F310](data/f310.jpg "F310")
 
 * **A**: manual
 * **X**: cmd_vel (nav2)
