@@ -44,6 +44,8 @@ plugins:
 
 nav:
     - Home: index.md
+    - Install:
+      - Docker: install/docker.md
     - Cerebri:
       - Zephyr RTOS: cerebri/zephyr/zephyr.md
       - Boards:
