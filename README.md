@@ -2,8 +2,11 @@
 
 ## Setup Poetry Environment
 
-[Poetry Install](https://python-poetry.org/docs/)
+First install Poetry:
 
+[https://python-poetry.org/docs/](https://python-poetry.org/docs/)
+
+Next create and activate the poetry virtual environment:
 
 ```bash
 poetry install
