@@ -72,12 +72,14 @@ ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py world:=basic_map
 
 Example of simulation running.
 
-![MRBuggy3 Depot world simulation.](data/mrbuggy3_depot.png "MRBuggy3 Depot world simulation")
+![MRBuggy3 Depot world simulation](data/mrbuggy3_depot.png "MRBuggy3 Depot world simulation")
 
 !!! attention
     **Use a joystick controller (logitech F310 suggested) to control vehicle modes.**
 
 ## Select a Mode:
+
+![F310](data/f310.png "F310")
 
 * **A**: manual
 * **X**: cmd_vel (nav2)
