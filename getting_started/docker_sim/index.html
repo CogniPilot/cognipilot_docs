@@ -311,6 +311,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#unlock-your-ssh-key" class="md-nav__link">
+    Unlock your SSH Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup-helmet-for-mrbuggy3-sitl" class="md-nav__link">
     Setup Helmet for MrBuggy3 SITL
   </a>
@@ -1725,6 +1732,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#unlock-your-ssh-key" class="md-nav__link">
+    Unlock your SSH Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup-helmet-for-mrbuggy3-sitl" class="md-nav__link">
     Setup Helmet for MrBuggy3 SITL
   </a>
@@ -1840,6 +1854,9 @@
 cd docker/dream
 ./run.sh terminator
 </code></pre>
+<h2 id="unlock-your-ssh-key">Unlock your SSH Key</h2>
+<pre><code class="language-bash">ssh-add
+</code></pre>
 <h2 id="setup-helmet-for-mrbuggy3-sitl">Setup Helmet for MrBuggy3 SITL</h2>
 <pre><code class="language-bash">cd ~/work
 git clone git@github.com:CogniPilot/helmet
@@ -1849,13 +1866,14 @@ vcs import &lt; helmet/dream/mrbuggy3.yaml
 <h2 id="build-cranium">Build Cranium</h2>
 <pre><code class="language-bash">cd ~/work/cranium
 colcon build --symlink-install
-. ./install.setup.sh
+. ./install/setup.sh
 </code></pre>
 <h2 id="build-cerebri-mrbuggy3-sitl">Build Cerebri MrBuggy3 SITL</h2>
 <pre><code class="language-bash">cd ~/work/ws/cerebri
 west init -l .
 west update
 west build app/mrbuggy3/ -b native_posix -t install -p
+. ./install/setup.sh
 </code></pre>
 <h2 id="run-mrbuggy3-sitl">Run MrBuggy3 SITL</h2>
 <pre><code class="language-bash">ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py
