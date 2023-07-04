@@ -16,6 +16,8 @@ theme:
   custom_dir: theme_overrides
   logo: assets/CogniPilotLogoSite.png
   favicon: assets/CogniPilotLogoFavicon.png
+  features:
+    - content.code.copy
 
 extra_css:
   - stylesheets/cognipilot-palette.css
