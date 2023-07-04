@@ -47,5 +47,37 @@ ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py
 ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py world:=basic_map
 ```
 
+## Simulation
+
+Example of simulation running.
+
 ![MRBuggy3 Depot world simulation.](data/mrbuggy3_depot.png "MRBuggy3 Depot world simulation")
+
+!!! attention
+    **Use a joystick controller (logitech F310 suggested) to control vehicle modes.**
+
+## Select a Mode:
+
+* **A**: manual
+* **X**: cmd_vel (nav2)
+* **B**: auto (corti)
+
+### Manual Mode:
+
+* **Left stick** Up/Down: throttle
+* **Right stick** Left/Right: steering
+
+### Nav2 (cmd_vel) Mode:
+
+* Click **2D Pose Goal** and select desired location on RVIZ2 map.
+
+### Auto Mode
+
+* Click **2D Pose Goal** and select desired location on RVIZ2 map.
+
+## Arming
+
+* **START**: arm
+* **BACK**: disarm
+
 
