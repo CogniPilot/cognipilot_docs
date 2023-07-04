@@ -23,6 +23,12 @@ cd docker/dream
 ./run.sh terminator
 ```
 
+## Unlock your SSH Key
+
+```bash
+ssh-add
+```
+
 ## Setup Helmet for MrBuggy3 SITL
 
 ```bash
@@ -37,7 +43,7 @@ vcs import < helmet/dream/mrbuggy3.yaml
 ```bash
 cd ~/work/cranium
 colcon build --symlink-install
-. ./install.setup.sh
+. ./install/setup.sh
 ```
 
 ## Build Cerebri MrBuggy3 SITL
@@ -47,6 +53,7 @@ cd ~/work/ws/cerebri
 west init -l .
 west update
 west build app/mrbuggy3/ -b native_posix -t install -p
+. ./install/setup.sh
 ```
 
 ## Run MrBuggy3 SITL
