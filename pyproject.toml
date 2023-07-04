@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cognipilot-docs"
+version = "0.1.0"
+description = "CogniPilot Documentation"
+authors = ["Cogni <info@cognipilot.com>"]
+readme = "README.md"
+packages = [{include = "cognipilot_docs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs = "^1.4.3"
+pymdown-extensions = "^10.0.1"
+mkdocs-material = "^9.1.18"
+mkdocs-macros-plugin = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
