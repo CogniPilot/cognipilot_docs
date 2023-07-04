@@ -126,17 +126,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cognipilot.org/getting_started/docker_sim/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cognipilot.org/helmet/install/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/helmet/docker/docker/</loc>
-         <lastmod>2023-07-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/install/docker/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
