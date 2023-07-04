@@ -1,8 +1,12 @@
 # Docker Simulation Tutorial
 
+## Setup SSH keys on Host
+
+* Ensure that you have setup ssh keys on your host computer to be able to clone the CogniPilot repositories: [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
 ## Setup Docker
 
-[Docker Setup](https://github.com/CogniPilot/docker)
+* Install the offfical Docker package: [Docker Setup](https://github.com/CogniPilot/docker)
 
 ```bash
 git clone git@github.com:CogniPilot/docker
