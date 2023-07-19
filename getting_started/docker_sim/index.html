@@ -308,6 +308,19 @@
     Setup Docker
   </a>
   
+    <nav class="md-nav" aria-label="Setup Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-rendering" class="md-nav__link">
+    Hardware Rendering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1729,6 +1742,19 @@
     Setup Docker
   </a>
   
+    <nav class="md-nav" aria-label="Setup Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hardware-rendering" class="md-nav__link">
+    Hardware Rendering
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1853,6 +1879,25 @@
 <pre><code class="language-bash">git clone git@github.com:CogniPilot/docker
 cd docker/dream
 ./dream start
+</code></pre>
+<h3 id="hardware-rendering">Hardware Rendering</h3>
+<p>To run gazebo within the container you will need an nvidia graphics card and
+should install the Nvidia Container Toolkit.</p>
+<p>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html</p>
+<p>Create a docker override, this file will be ignored by .git so you
+can use it as a location to put any customizations.</p>
+<p>docker-compose.override.yml</p>
+<pre><code class="language-yaml">services:
+
+  dream:
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 </code></pre>
 <h2 id="unlock-your-ssh-key">Unlock your SSH Key</h2>
 <pre><code class="language-bash">./dream exec unlock
