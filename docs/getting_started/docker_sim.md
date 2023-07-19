@@ -23,6 +23,32 @@ cd docker/dream
 ./dream start
 ```
 
+### Hardware Rendering
+
+To run gazebo within the container you will need an nvidia graphics card and
+should install the Nvidia Container Toolkit.
+
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
+
+Create a docker override, this file will be ignored by .git so you
+can use it as a location to put any customizations.
+
+docker-compose.override.yml
+
+```yaml
+services:
+
+  dream:
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+```
+
 ## Unlock your SSH Key
 
 ```bash
