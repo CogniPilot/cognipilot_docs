@@ -20,43 +20,34 @@ This may work on other environments but only Ubuntu 22.04 is officially supporte
 ```bash
 git clone git@github.com:CogniPilot/docker
 cd docker/dream
-./run.sh terminator
+./dream start
 ```
 
 ## Unlock your SSH Key
 
 ```bash
-ssh-add
+./dream exec unlock
 ```
 
-## Setup Helmet for MrBuggy3 SITL
+## Build MrBuggy3 SITL
 
 ```bash
-cd ~/work
-git clone git@github.com:CogniPilot/helmet
-vcs import < helmet/dream/base.yaml
-vcs import < helmet/dream/mrbuggy3.yaml 
+./dream exec build_mrbuggy3_sitl
 ```
 
-## Build Cranium
+## Start JupyterLab (if you want)
 
 ```bash
-cd ~/work/cranium
-colcon build --symlink-install
-. ./install/setup.sh
+./dream exec cyecca
 ```
 
-## Build Cerebri MrBuggy3 SITL
+## Start a Bash Terminal
 
 ```bash
-cd ~/work/ws/cerebri
-west init -l .
-west update
-west build app/mrbuggy3/ -b native_posix -t install -p
-. ./install/setup.sh
+./dream exec
 ```
 
-## Run MrBuggy3 SITL
+## Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
 
 ```bash
 ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py
