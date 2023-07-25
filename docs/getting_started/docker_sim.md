@@ -24,9 +24,7 @@ cd docker/dream
 ```
 
 !!! attention
-** Rendering for Nivida Graphics Cards **
-To run gazebo with an Nvidia graphics card you
-should install the [NVidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html).
+    ** Rendering for Nivida Graphics Cards **: To run gazebo with an Nvidia graphics card you should install the [NVidia Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html).
 
 ## Configure Your Docker Environment
 
