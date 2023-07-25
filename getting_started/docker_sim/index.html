@@ -308,19 +308,6 @@
     Setup Docker
   </a>
   
-    <nav class="md-nav" aria-label="Setup Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rendering-for-nivida-graphics-cards" class="md-nav__link">
-    Rendering for Nivida Graphics Cards
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1749,19 +1736,6 @@
     Setup Docker
   </a>
   
-    <nav class="md-nav" aria-label="Setup Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rendering-for-nivida-graphics-cards" class="md-nav__link">
-    Rendering for Nivida Graphics Cards
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1894,10 +1868,12 @@
 cd docker/dream
 ./dream start
 </code></pre>
-<h4 id="rendering-for-nivida-graphics-cards">Rendering for Nivida Graphics Cards</h4>
-<p>To run gazebo with an Nvidia graphics card you
-should install the Nvidia Container Toolkit.</p>
-<p>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+</div>
+<p><strong> Rendering for Nivida Graphics Cards </strong>
+To run gazebo with an Nvidia graphics card you
+should install the <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html">NVidia Container Toolkit</a>.</p>
 <h2 id="configure-your-docker-environment">Configure Your Docker Environment</h2>
 <p>The config script will ask you a few questions and create a docker-compose.ovverrides.yml
 that will be used when running your container.</p>
