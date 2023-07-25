@@ -84,7 +84,7 @@ Example of simulation running.
 ![MRBuggy3 Depot world simulation](data/mrbuggy3_depot.png "MRBuggy3 Depot world simulation")
 
 !!! attention
-    **Use a joystick controller (logitech F310 suggested) to control vehicle modes.**
+    **Use a joystick controller ([Logitech F310](https://www.amazon.com/Logitech-940-000110-Gamepad-F310/dp/B003VAHYQY/) suggested) to control vehicle modes.**
 
 ## Select a Mode:
 
