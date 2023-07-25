@@ -23,30 +23,24 @@ cd docker/dream
 ./dream start
 ```
 
-### Hardware Rendering
+#### Rendering for Nivida Graphics Cards
 
-To run gazebo within the container you will need an nvidia graphics card and
+To run gazebo with an Nvidia graphics card you
 should install the Nvidia Container Toolkit.
 
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html
 
-Create a docker override, this file will be ignored by .git so you
-can use it as a location to put any customizations.
+## Configure Your Docker Environment
 
-docker-compose.override.yml
+The config script will ask you a few questions and create a docker-compose.ovverrides.yml
+that will be used when running your container.
 
-```yaml
-services:
+You will be asked about your graphics card, ssh, and gpg keys etc. Default answers are in
+brackets.
 
-  dream:
-
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+```bash
+cd docker/dream
+./dream config
 ```
 
 ## Unlock your SSH Key
