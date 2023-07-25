@@ -312,14 +312,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware-rendering" class="md-nav__link">
-    Hardware Rendering
+  <a href="#rendering-for-nivida-graphics-cards" class="md-nav__link">
+    Rendering for Nivida Graphics Cards
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-docker-environment" class="md-nav__link">
+    Configure Your Docker Environment
+  </a>
   
 </li>
       
@@ -1746,14 +1753,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#hardware-rendering" class="md-nav__link">
-    Hardware Rendering
+  <a href="#rendering-for-nivida-graphics-cards" class="md-nav__link">
+    Rendering for Nivida Graphics Cards
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-docker-environment" class="md-nav__link">
+    Configure Your Docker Environment
+  </a>
   
 </li>
       
@@ -1880,24 +1894,17 @@
 cd docker/dream
 ./dream start
 </code></pre>
-<h3 id="hardware-rendering">Hardware Rendering</h3>
-<p>To run gazebo within the container you will need an nvidia graphics card and
+<h4 id="rendering-for-nivida-graphics-cards">Rendering for Nivida Graphics Cards</h4>
+<p>To run gazebo with an Nvidia graphics card you
 should install the Nvidia Container Toolkit.</p>
 <p>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html</p>
-<p>Create a docker override, this file will be ignored by .git so you
-can use it as a location to put any customizations.</p>
-<p>docker-compose.override.yml</p>
-<pre><code class="language-yaml">services:
-
-  dream:
-
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+<h2 id="configure-your-docker-environment">Configure Your Docker Environment</h2>
+<p>The config script will ask you a few questions and create a docker-compose.ovverrides.yml
+that will be used when running your container.</p>
+<p>You will be asked about your graphics card, ssh, and gpg keys etc. Default answers are in
+brackets.</p>
+<pre><code class="language-bash">cd docker/dream
+./dream config
 </code></pre>
 <h2 id="unlock-your-ssh-key">Unlock your SSH Key</h2>
 <pre><code class="language-bash">./dream exec unlock
