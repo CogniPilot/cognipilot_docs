@@ -51,7 +51,7 @@ nav:
     - Cerebri:
       - Zephyr RTOS: cerebri/zephyr/zephyr.md
       - Boards:
-        - NXP® RT6: cerebri/boards/nxp_rt6.md
+        - NXP® VMU RT1170: cerebri/boards/nxp_vmu_rt1170.md
         - POSIX: cerebri/boards/posix.md
       - Platforms:
         - MultiCopters: cerebri/platforms/multicopters.md
