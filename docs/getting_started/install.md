@@ -28,16 +28,17 @@ cd ~/cognipilot
 git clone git@github.com:cognipilot/helmet
 ```
 
+## Run Install Script
+
+```bash
+~/cognipilot/helmet/install/native_install.sh
+. ~/.profile
+```
+
 ## Start JupyterLab (if you want)
 
 ```bash
-./dream exec cyecca
-```
-
-## Start a Bash Terminal
-
-```bash
-./dream exec
+cyecca
 ```
 
 ## Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
@@ -86,5 +87,4 @@ Example of simulation running.
 
 * **START**: arm
 * **BACK**: disarm
-
 
