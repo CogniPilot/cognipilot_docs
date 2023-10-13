@@ -6,177 +6,182 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cerebri/boards/nxp_vmu_rt1170/</loc>
+         <loc>https://cognipilot.org/releases/airy/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cerebri/boards/posix/</loc>
+         <loc>https://cognipilot.org/releases/airy/cerebri/boards/nxp_vmu_rt1170/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cerebri/platforms/multicopters/</loc>
+         <loc>https://cognipilot.org/releases/airy/cerebri/boards/posix/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cerebri/platforms/rovers/</loc>
+         <loc>https://cognipilot.org/releases/airy/cerebri/platforms/multicopters/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cerebri/zephyr/zephyr/</loc>
+         <loc>https://cognipilot.org/releases/airy/cerebri/platforms/rovers/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/compute/navqplus/setup/</loc>
+         <loc>https://cognipilot.org/releases/airy/cerebri/zephyr/zephyr/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/corti/corti/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/compute/navqplus/setup/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/oculi/oculi/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/corti/corti/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/pari/pari/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/oculi/oculi/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/synapse/synapse/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/pari/pari/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/cranium/tempi/tempi/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/synapse/synapse/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/dream/launch/</loc>
+         <loc>https://cognipilot.org/releases/airy/cranium/tempi/tempi/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/dream/models/models/</loc>
+         <loc>https://cognipilot.org/releases/airy/dream/launch/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/dream/worlds/worlds/</loc>
+         <loc>https://cognipilot.org/releases/airy/dream/models/models/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/electrode/joystick/</loc>
+         <loc>https://cognipilot.org/releases/airy/dream/worlds/worlds/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/electrode/rviz2/</loc>
+         <loc>https://cognipilot.org/releases/airy/electrode/joystick/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/buggy_3/buggy_3/</loc>
+         <loc>https://cognipilot.org/releases/airy/electrode/rviz2/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/buggy_3/simulation/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/buggy_3/buggy_3/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/el_mandadero/el_mandadero/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/buggy_3/simulation/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/el_mandadero/simulation/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/el_mandadero/el_mandadero/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/minimando/minimando/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/el_mandadero/simulation/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/minimando/simulation/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/minimando/minimando/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/rddrone/rddrone/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/minimando/simulation/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/example_systems/rddrone/simulation/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/rddrone/rddrone/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/getting_started/docker_sim/</loc>
+         <loc>https://cognipilot.org/releases/airy/example_systems/rddrone/simulation/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/getting_started/install/</loc>
+         <loc>https://cognipilot.org/releases/airy/getting_started/docker_sim/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/helmet/install/</loc>
+         <loc>https://cognipilot.org/releases/airy/getting_started/install/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/helmet/docker/docker/</loc>
+         <loc>https://cognipilot.org/releases/airy/helmet/install/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/resources/contact/</loc>
+         <loc>https://cognipilot.org/releases/airy/helmet/docker/docker/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/resources/contribute/</loc>
+         <loc>https://cognipilot.org/releases/airy/resources/contact/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/spinali/canfd/</loc>
+         <loc>https://cognipilot.org/releases/airy/resources/contribute/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/spinali/actuators/actuators/</loc>
+         <loc>https://cognipilot.org/releases/airy/spinali/canfd/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/spinali/sensors/sensors/</loc>
+         <loc>https://cognipilot.org/releases/airy/spinali/actuators/actuators/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/tools/hcdf/hcdf/</loc>
+         <loc>https://cognipilot.org/releases/airy/spinali/sensors/sensors/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cognipilot.org/tools/pyecca/pyecca/</loc>
+         <loc>https://cognipilot.org/releases/airy/tools/hcdf/hcdf/</loc>
+         <lastmod>2023-10-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/releases/airy/tools/pyecca/pyecca/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
