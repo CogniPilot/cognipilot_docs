@@ -1,13 +1,13 @@
 # CogniPilot Developers Guide
 
 
-Selection a Release:
+Releases:
 
 
 | Name  |Release Date | EOL Date |
 |-------|-------------|----------|
 |  [<img src='releases/airy/assets/airy-name.png' width='200'>](releases/airy) | Oct. 2023 | Oct 2024 |
-| [B (Mythical TBD)](https://github.com/orgs/CogniPilot/projects/2/views/1?filterQuery=milestone%3A%22B+Mythical%22) | TBD | TBD |
+| [B (Mythical TBD)](releases/b-mythical) | TBD | TBD |
 
 
 
