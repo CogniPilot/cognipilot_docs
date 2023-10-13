@@ -2,7 +2,7 @@
 
 Name to be determined.
 
-See our current progress on our [Roadmap](https://github.com/orgs/CogniPilot/projects/2/views/1?filterQuery=milestone%3A%22B+Mythical%22).
+See the current progress on the [Roadmap](https://github.com/orgs/CogniPilot/projects/2/views/1?filterQuery=milestone%3A%22B+Mythical%22).
 
 # Software Stack
 * Ubuntu 24.04

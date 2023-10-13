@@ -2,7 +2,7 @@
 
 An [Alicanto](https://en.wikipedia.org/wiki/Alicanto) is a bird from  Chilean mythology known to eat gold or silver and then glow. The bird is incapable of flight after overindulging on ore.
 
-**Airy** Alicanto represents the origin of CogniPilot's light weight, and minimalistic software stack following a correct by construction software paradigm.
+**Airy Alicanto** represents the origin of CogniPilot's light weight, and minimalistic software stack following a correct by construction software paradigm.
 
 ## Correct by Construction Design Drivers
 
@@ -35,7 +35,7 @@ CogniPilot's upcoming release, to be named, but going by B-Mythical (a mythical 
 # Software Stack
 * Ubuntu 22.04
 * Zephyr RTOS 3.5
-* ROS Humble
+* ROS 2 Humble
 * Gazebo Harmonic
 
 To get started see [Install](./getting_started/install.md)

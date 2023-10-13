@@ -46,7 +46,12 @@ plugins:
   - exclude:
       glob:
         - releases/airy/electrode/*
-        - releases/airy/cranium/*
+        - releases/airy/cranium/tempi/*
+        - releases/airy/cranium/corti/*
+        - releases/airy/cranium/oculi/*
+        - releases/airy/cranium/synapse/*
+        - releases/airy/cranium/tempi/*
+        - releases/airy/cranium/pari/*
         - releases/airy/example_systems/*
         - releases/airy/spinali/*
         - releases/airy/cerebri/boards/posix.md
@@ -55,3 +60,4 @@ plugins:
         - releases/airy/dream/*
         - releases/airy/helmet/*
         - releases/airy/tools/*
+        - resources/*

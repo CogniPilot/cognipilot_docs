@@ -8,7 +8,7 @@ This may work on other environments but only Ubuntu 22.04 is officially supporte
 
 ## Docker Option
 
-If you wish, there is a [docker container](https://github.com/CogniPilot/docker) that is a dev environment for CogniPilot with Nvidia GPU support. If you use this option, do not run the native\_install script, as the packages are already installed.
+If you wish, there is a development docker container ([docker hub](https://hub.docker.com/r/cognipilot/dream), [docker source](https://github.com/CogniPilot/docker)) for CogniPilot with Nvidia GPU support. If you use this option, do not run the native\_install script, as the packages are already installed.
 
 ## Setup SSH keys on Host and GitHub
 
@@ -50,7 +50,7 @@ This command is running the [following script](https://github.com/CogniPilot/hel
 This script does the following:
 
  * Sets up the vcs workspaces based on yaml files provided in helmet.
- * Builds the cranium ROS2 workspace
+ * Builds the cranium ROS 2 workspace
  * Builds Cerebri native\_posix software-in-the-loop simuliation
  * Builds Cyecca (control/estimation software)
  * Builds Electrode (ground station software)

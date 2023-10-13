@@ -13,7 +13,7 @@
 * [Github RoadMap](https://github.com/orgs/CogniPilot/projects/2/views/1)
 
 
-[**CogniPilot Foundation**]("https://www.cognipilot.com")
+[**CogniPilot Foundation**](https://www.cognipilot.com)
 
 
 ## Contributors
