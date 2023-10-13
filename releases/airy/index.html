@@ -783,21 +783,21 @@
 
 <h1 id="about-airy-alicanto">About Airy Alicanto</h1>
 <p>An <a href="https://en.wikipedia.org/wiki/Alicanto">Alicanto</a> is a bird from  Chilean mythology known to eat gold or silver and then glow. The bird is incapable of flight after overindulging on ore.</p>
-<p><strong>Airy</strong> Alicanto represents the origin of our light weight, and minimalistic software stack following a correct by construction software paradigm.</p>
+<p><strong>Airy</strong> Alicanto represents the origin of CogniPilot's light weight, and minimalistic software stack following a correct by construction software paradigm.</p>
 <h2 id="correct-by-construction-design-drivers">Correct by Construction Design Drivers</h2>
-<p>We are not aiming to re-invent an opensource autopilot that can "fly anything" (there are many great autopilots for that (<a href="https://px4.io/">PX4</a>,  <a href="https://ardupilot.org/">ArduPilot</a>), but instead focusing on state-of-the-art methologies for creating an autopilot with mathematically provable robustness properties. We are aiming to create a new generation of open source autopilot that can conduct safety critical missions such as transporting people, with a level of safety assurance not currently available in open source autopilot systems.</p>
+<p>CogniPilot is not aiming to re-invent an opensource autopilot that can be a drop in replacement for use in Hobby drones, FPV Racing drones, or a wide variety of DIY autonomous vehicles, there are many great autopilots for that (<a href="https://ardupilot.org/">ArduPilot</a>, <a href="https://betaflight.com/">BetaFlight</a>, <a href="https://px4.io/">PX4</a>). CogniPilot instead focuses on state-of-the-art methologies for creating an autopilot with mathematically provable robustness properties. In order to achieve this level of reliability, accurate mathematical models of the vehicle and control software must be established that are beyond the expected domain of many hobbyists. However, for those willing to pursue the extra steps to create a mathematical model of their vehicle, templates are available to enable out of tree custom vehicles. CogniPilot is a new class of open source autopilot that can conduct safety critical missions such as transporting people, with a level of safety assurance not currently available in other open source autopilots.</p>
 <ul>
 <li>
-<p><strong>Minimum Viable Code for the Mission</strong>: By minimizing the lines of source code and branching, we ensure higher reliability, maintainability, and verifiability of the project. </p>
+<p><strong>Minimum Viable Code for the Mission</strong>: By minimizing the lines of source code and branching, CogniPilot ensures higher reliability, maintainability, and verifiability of the project. </p>
 </li>
 <li>
-<p><strong>Minimize Branch Statements in Control and Estimation Code</strong>: We generally classify our code components into two areas. The first is low-level driver and application code. The second is guidance, control, and estimation code for the vehicle. We carefully consider the addition of each branch (if statement etc.) in our code for the estimator and controller as we are modelling the entire system mathematically, and each branch statement considerably complicates the verification task.</p>
+<p><strong>Minimize Branch Statements in Control and Estimation Code</strong>: CogniPilot generally classifies its code components into two areas. The first is low-level driver and application code. The second is guidance, control, and estimation code for the vehicle. Developers carefully consider the addition of each branch (if statement etc.) in the code for the estimator and controller, as developers are modelling the entire system mathematically. Each branch statement considerably complicates the verification task.</p>
 </li>
 <li>
-<p><strong>Minimize Maintenance to Maintain Reliability</strong>: Our goal is for CogniPilot to support a wide variety of vehicles (Planes, Copters, Boats, Rovers, Submersibles) and user applications while maintaining software integrity and reliaiblity. We plan to limit official support for each release to a minimal amount of vehicles for each class, while providing out of tree support via templates.</p>
+<p><strong>Minimize Maintenance to Maintain Reliability</strong>: A goal of CogniPilot is to support a wide variety of vehicles (Planes, Copters, Boats, Rovers, Submersibles) and user applications while maintaining software integrity and reliaiblity. CogniPilot plans to limit official support for each release to a minimal amount of vehicles for each class, while providing out of tree support via templates.</p>
 </li>
 <li>
-<p><strong>Deprecate if No-longer Maintained</strong>: On each release cycle, we will make a decision on whether to maintain official support for each vehicle platform or whether to adopt a new platform. This is to combat the slow creep in lines of code due to vehicle specific edge cases. </p>
+<p><strong>Deprecate if No-longer Maintained</strong>: On each release cycle, the CogniPilot technical steering committee (TSC) will make a decision on whether to maintain official support for each vehicle platform or whether to adopt a new platform. This is to combat the slow creep in lines of code due to vehicle specific edge cases. </p>
 </li>
 </ul>
 <h1 id="currently-supported-platforms">Currently supported platforms:</h1>
@@ -806,7 +806,7 @@
 <li>MrBuggy3</li>
 <li>ELM4</li>
 </ul>
-<p>In our upcoming release, to be named, but going by B-Mythical (a mythical creature with a name starting with B), we plan to additionally support:</p>
+<p>CogniPilot's upcoming release, to be named, but going by B-Mythical (a mythical creature with a name starting with B) will have planned additional support for:</p>
 <h2 id="mulirotor">Mulirotor</h2>
 <ul>
 <li>NXP RDDrone</li>
