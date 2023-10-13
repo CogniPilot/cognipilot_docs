@@ -12,19 +12,25 @@
         <meta name="author" content="CogniPilot Foundation">
       
       
+        <link rel="canonical" href="https://cognipilot.org/releases/airy/cranium/compute/navqplus/setup/">
       
       
+        <link rel="prev" href="../../../../cerebri/boards/nxp_vmu_rt1170/">
       
-      <link rel="icon" href="/assets/CogniPilotLogoFavicon.png">
+      
+        <link rel="next" href="../../../../getting_started/install/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/CogniPilotLogoFavicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.5">
     
     
       
-        <title>Dev Guide</title>
+        <title>Connect NavQPlus and set up ROS 2 Humble - Dev Guide</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6a10b989.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.6a10b989.min.css">
       
       
 
@@ -43,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/cognipilot-palette.css">
+      <link rel="stylesheet" href="../../../../../../stylesheets/cognipilot-palette.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#connect-navqplus-and-set-up-ros-2-humble" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,9 +89,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../../../../../.." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="/assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../../../../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -97,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Connect NavQPlus and set up ROS 2 Humble
             
           </span>
         </div>
@@ -181,9 +192,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../../../../../.." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="/assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../../../../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     Dev Guide
@@ -209,7 +220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -226,18 +237,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -251,7 +264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Releases
@@ -262,18 +275,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -287,7 +302,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Airy
@@ -300,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/releases/airy/" class="md-nav__link">
+      <a href="../../../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -356,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/releases/airy/cerebri/" class="md-nav__link">
+      <a href="../../../../cerebri/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/releases/airy/cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
+      <a href="../../../../cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,18 +461,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
@@ -471,7 +488,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1_3">
             <span class="md-nav__icon md-icon"></span>
             Cranium
@@ -482,18 +499,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1_3_1" id="__nav_2_1_3_1_label" tabindex="0">
@@ -507,7 +526,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1_3_1">
             <span class="md-nav__icon md-icon"></span>
             Compute
@@ -518,18 +537,20 @@
                 
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_1_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_3_1_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1_3_1_1" id="__nav_2_1_3_1_1_label" tabindex="0">
@@ -543,7 +564,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_3_1_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_1_3_1_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1_3_1_1">
             <span class="md-nav__icon md-icon"></span>
             Navqplus
@@ -554,9 +575,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/releases/airy/cranium/compute/navqplus/setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Connect NavQPlus and set up ROS 2 Humble
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -565,6 +606,136 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    Before you start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-step
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-sd-card" class="md-nav__link">
+    Flashing the SD card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-emmc" class="md-nav__link">
+    Flashing the eMMC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot-switches" class="md-nav__link">
+    Boot Switches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-in-for-the-first-time" class="md-nav__link">
+    Log in for the first time
+  </a>
+  
+    <nav class="md-nav" aria-label="Log in for the first time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usb-to-uart-adapter" class="md-nav__link">
+    USB to UART adapter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethernet" class="md-nav__link">
+    Ethernet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-c-gadget-ethernet" class="md-nav__link">
+    USB-C® Gadget Ethernet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expand-image" class="md-nav__link">
+    Expand Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-wifi-system-username-and-password" class="md-nav__link">
+    Configuring WiFi, System Username and Password
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring WiFi, System Username and Password">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-wifi-on-navqplus" class="md-nav__link">
+    Configuring WiFi on NavQPlus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-system-username-and-password" class="md-nav__link">
+    Configuring System Username and Password
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-navqplus-over-wifi" class="md-nav__link">
+    Connecting to NavQPlus over WiFi
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -636,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/releases/airy/getting_started/install/" class="md-nav__link">
+      <a href="../../../../getting_started/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/releases/b-mythical/" class="md-nav__link">
+      <a href="../../../../../b-mythical/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -754,6 +925,126 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-start" class="md-nav__link">
+    Before you start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step" class="md-nav__link">
+    Step-by-step
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-sd-card" class="md-nav__link">
+    Flashing the SD card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flashing-the-emmc" class="md-nav__link">
+    Flashing the eMMC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot-switches" class="md-nav__link">
+    Boot Switches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-in-for-the-first-time" class="md-nav__link">
+    Log in for the first time
+  </a>
+  
+    <nav class="md-nav" aria-label="Log in for the first time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usb-to-uart-adapter" class="md-nav__link">
+    USB to UART adapter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethernet" class="md-nav__link">
+    Ethernet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb-c-gadget-ethernet" class="md-nav__link">
+    USB-C® Gadget Ethernet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expand-image" class="md-nav__link">
+    Expand Image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-wifi-system-username-and-password" class="md-nav__link">
+    Configuring WiFi, System Username and Password
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring WiFi, System Username and Password">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-wifi-on-navqplus" class="md-nav__link">
+    Configuring WiFi on NavQPlus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-system-username-and-password" class="md-nav__link">
+    Configuring System Username and Password
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-navqplus-over-wifi" class="md-nav__link">
+    Connecting to NavQPlus over WiFi
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -765,8 +1056,160 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="connect-navqplus-and-set-up-ros-2-humble">Connect NavQPlus and set up ROS 2 Humble</h1>
+<h2 id="before-you-start">Before you start</h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>The NavQPlus Ubuntu 22.04 with ROS 2 Humble image uses CycloneDDS by default.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></strong></p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>These directions are written for someone with experience with embedded Linux and basic embedded computers.</strong></p>
+</div>
+<h2 id="step-by-step">Step-by-step</h2>
+<ol>
+<li>Download the <a href="https://github.com/rudislabs/navqplus-create3-images/releases/latest">pre-built latest Ubuntu 22.04 with ROS2 Humble and CycloneDDS image</a>, specifically designed for use with the Create® 3.</li>
+<li>Extract the image <code>navqplus-image-&lt;version&gt;.wic</code> from the compressed downloaded file <code>navqplus-image-&lt;version&gt;.wic.bz2</code> and flash it to an <a href="#flashing-the-sd-card">SD card</a> or the <a href="#flashing-the-emmc">EMMC</a>.</li>
+<li><a href="#log-in-for-the-first-time">Log in for the first time</a> by connecting to your computer using the <a href="#usb-to-uart-adapter">USB to UART adatper</a>, <a href="#ethernet">ethernet adapter</a> or <a href="#usb-c-gadget-ethernet">centermost (USB 2) USB-C® port</a>.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+<li><a href="#configuring-wifi-system-username-and-password">Configure Wifi, System User Name and Password.</a></li>
+<li><a href="#connecting-to-navqplus-over-wifi">Connect to NavQPlus over WiFi</a></li>
+</ol>
+<h2 id="flashing-the-sd-card">Flashing the SD card</h2>
+<p>The NavQPlus comes with a 32GB SD card that you can flash with the pre-built Ubuntu 22.04 image. See below for instructions to flash your SD card on each platform.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>You must have an SD card reader available on your system to perform these instructions.</strong></p>
+</div>
+<p>To flash your SD card with the image you downloaded in step 1, we suggest using <code>dd</code>.</p>
+<p>To do this, open a terminal and navigate to the folder that you downloaded the <code>navqplus-image-&lt;version&gt;.wic</code> file.</p>
+<p>Once you are there, insert your SD card, and find the device path for it. Typically, it will be something like <code>/dev/sdX</code>.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Be careful that you select the correct drive path when using <code>dd</code> to flash your SD card. You can confirm with the "Disks" app on Ubuntu.</strong></p>
+</div>
+<p>Once you have found your device path, run the following command in your terminal to flash the SD card:</p>
+<pre><code>sudo dd if=navqplus-image-&lt;version&gt;.wic of=/dev/sdX bs=1M status=progress oflag=sync
+</code></pre>
+<p>Once this is done, your SD card will be flashed with the image. Make sure that your <a href="#boot-switches">boot switches</a> are set to boot from SD.</p>
+<h2 id="flashing-the-emmc">Flashing the eMMC</h2>
+<p>To flash the eMMC on your NavQPlus, you will need to download <a href="https://github.com/NXPmicro/mfgtools/releases/latest">UUU</a>, a tool created by NXP to flash NXP boards. Make sure to download the correct application for your platform. The file titled "uuu" with no file extension is a binary file for use on x86/64 Linux.</p>
+<p>Once you have downloaded UUU, find the <a href="#boot-switches">boot switches</a> on your NavQPlus and flip them to the "Flash" mode.</p>
+<p>Then, connect NavQPlus to your computer using the leftmost (USB 1) USB-C® port and the two flash status light should light up as shown in the image. 
+<img alt="Flash eMMC hookup and status lights." src="../data/flash_hookup_lights.jpg" title="Flash eMMC hookup and status lights" /></p>
+<p>Run the following command to make sure that the NavQPlus is recognized by UUU:</p>
+<pre><code>./uuu -lsusb
+</code></pre>
+<p><img alt="Found device with UUU." src="../data/uuu_ls.png" title="UUU found device" /></p>
+<p>You should see that there is a device detected. If so, you can continue flashing. To flash your board, use the command below:</p>
+<pre><code>./uuu -b emmc_all navqplus-image-&lt;version&gt;.bin-flash_evk navqplus-image-&lt;version&gt;.wic
+</code></pre>
+<p>Once this process has finished, make sure that the flash was successfull by comparing to the image below. If so, configure your <a href="#boot-switches">boot switches</a> to boot from eMMC.</p>
+<p><img alt="Successful eMMC flash." src="../data/uuu_emmc.png" title="Flashed eMMC Successfully" /></p>
+<h2 id="boot-switches">Boot Switches</h2>
+<p>NavQPlus can be configured to boot from either SD card or eMMC. It also has a flash mode that allows you to flash either the eMMC or SD card over USB-C®. See the table below for the boot switch configuration.</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Switch 1</th>
+<th>Switch 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SD</td>
+<td>ON</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>eMMC</td>
+<td>OFF</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>Flash</td>
+<td>ON</td>
+<td>OFF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="log-in-for-the-first-time">Log in for the first time</h2>
+<p>Power on the NavQPlus by plugging in a USB-C® cable to the centermost (USB 2) USB-C® port. NavQPlus will boot, and you will be able to confirm it has fully booted by observing the LEDs on board. The 3 LEDs by the USB1 port should be on, as well as two LEDs next to the CAN bus connectors.</p>
+<p>To log into NavQPlus, you can use the included <a href="#usb-to-uart-adapter">USB to UART adapter</a>, <a href="#ethernet">Ethernet</a>, or <a href="#usb-c-gadget-ethernet">USB-C® gadget mode (recommended)</a>. The default username/password combo is as follows:</p>
+<p><strong>Username: user</strong></p>
+<p><strong>Password: user</strong></p>
+<h3 id="usb-to-uart-adapter">USB to UART adapter</h3>
+<p>Connect the included USB to UART adapter to the UART2 port on the NavQPlus, and open your favorite serial console application. Open a serial console with a baud rate of 115200. Press enter if there is no output on the screen to get a log-in prompt. </p>
+<h3 id="ethernet">Ethernet</h3>
+<p>Connect the included IX Industrial Ethernet cable to NavQPlus, and connect the RJ45 connector to your computer, switch, or router on your local network. You can log into NavQPlus over SSH. The default hostname for NavQPlus is imx8mpnavq. To SSH into NavQPlus, you can run the following command:</p>
+<pre><code>ssh user@imx8mpnavq.local
+</code></pre>
+<h3 id="usb-c-gadget-ethernet">USB-C® Gadget Ethernet</h3>
+<p>The IP address of the <code>usb0</code> network interface on NavQPlus is statically assigned to 192.168.186.3. If you want to use USB-C® gadget ethernet to connect to NavQPlus, you will need to assign a static IP to your existing gadget ethernet interface on your computer. The network configuration is as follows:</p>
+<p><strong>IP Address:</strong> 192.168.186.2</p>
+<p><strong>Network Mask:</strong> 255.255.255.0</p>
+<p><img alt="Network Manager connection profile." src="../data/usb_network.png" title="USB-C® gadget ethernet network connection" /></p>
+<p>Once you have set up your USB-C® gadget ethernet interface on your computer, you can SSH by running:</p>
+<pre><code>ssh user@imx8mpnavq.local
+</code></pre>
+<h3 id="expand-image">Expand Image</h3>
+<p>The flashed images will need expanding to utilize all the available storage.
+After logging into the NavQPlus open a terminal and run:</p>
+<ul>
+<li>Expand image on the SD:</li>
+</ul>
+<pre><code>echo -e &quot;d\n2\nn\np\n2\n196608\n\n\nw&quot; | sudo fdisk /dev/mmcblk1 &amp;&amp; sudo resize2fs /dev/mmcblk1p2
+</code></pre>
+<ul>
+<li>Expand image on the eMMC:</li>
+</ul>
+<pre><code>echo -e &quot;d\n2\nn\np\n2\n196608\n\n\nw&quot; | sudo fdisk /dev/mmcblk2 &amp;&amp; sudo resize2fs /dev/mmcblk2p2
+</code></pre>
+<h2 id="configuring-wifi-system-username-and-password">Configuring WiFi, System Username and Password</h2>
+<h3 id="configuring-wifi-on-navqplus">Configuring WiFi on NavQPlus</h3>
+<p>To connect NavQPlus to your local WiFi network, you can use the <code>nmcli</code> command. The interface is relatively straightforward, to connect with <code>nmcli</code>, run the following command:</p>
+<pre><code>sudo nmcli device wifi connect &lt;network_name&gt; password &quot;&lt;password&gt;&quot;
+</code></pre>
+<p>Once you are finished connecting to your local WiFi network, you can exit the application. Your NavQPlus will continue to connect to this WiFi network even after a reboot.</p>
+<h3 id="configuring-system-username-and-password">Configuring System Username and Password</h3>
+<p>To change the default username and password, use the commands below.</p>
+<p>Username:</p>
+<pre><code>usermod -l &lt;new_username&gt; user
+mv /home/user /home/&lt;new_username&gt;
+</code></pre>
+<p>Password:</p>
+<pre><code>passwd
+</code></pre>
+<h2 id="connecting-to-navqplus-over-wifi">Connecting to NavQPlus over WiFi</h2>
+<p>Once you have set up your NavQPlus to connect to your local WiFi network, you can now SSH into your NavQPlus over WiFi by running:</p>
+<pre><code>ssh &lt;your-username&gt;@imx8mpnavq.local
+</code></pre>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Ubuntu is a registered trademark of Canonical Ltd.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>USB-C® is a trademark of USB Implementers Forum.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>ROS 2 is governed by Open Robotics&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -819,10 +1262,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["content.code.copy"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["content.code.copy"], "search": "../../../../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

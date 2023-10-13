@@ -21,22 +21,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cognipilot.org/releases/airy/cranium/compute/navqplus/setup/</loc>
+         <lastmod>2023-10-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cognipilot.org/releases/airy/getting_started/install/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/b-mythical/</loc>
-         <lastmod>2023-10-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/resources/contact/</loc>
-         <lastmod>2023-10-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/resources/contribute/</loc>
          <lastmod>2023-10-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
