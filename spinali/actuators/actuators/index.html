@@ -12,23 +12,25 @@
         <meta name="author" content="CogniPilot Foundation">
       
       
-        <link rel="canonical" href="https://cognipilot.org/">
+        <link rel="canonical" href="https://cognipilot.org/spinali/actuators/actuators/">
       
       
+        <link rel="prev" href="../../sensors/sensors/">
       
-        <link rel="next" href="getting_started/install/">
+      
+        <link rel="next" href="../../../example_systems/rddrone/rddrone/">
       
       
-      <link rel="icon" href="assets/CogniPilotLogoFavicon.png">
+      <link rel="icon" href="../../../assets/CogniPilotLogoFavicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.5">
     
     
       
-        <title>Dev Guide</title>
+        <title>Actuators - Dev Guide</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6a10b989.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6a10b989.min.css">
       
       
 
@@ -47,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/cognipilot-palette.css">
+      <link rel="stylesheet" href="../../../stylesheets/cognipilot-palette.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cognipilot-developers-guide" class="md-skip">
+        <a href="#actuators-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -91,9 +93,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../../.." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Actuators
             
           </span>
         </div>
@@ -194,9 +196,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../../.." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     Dev Guide
@@ -220,18 +222,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -240,7 +233,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -287,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting_started/install/" class="md-nav__link">
+      <a href="../../../getting_started/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -307,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting_started/docker_sim/" class="md-nav__link">
+      <a href="../../../getting_started/docker_sim/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -370,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/zephyr/zephyr/" class="md-nav__link">
+      <a href="../../../cerebri/zephyr/zephyr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
+      <a href="../../../cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/boards/posix/" class="md-nav__link">
+      <a href="../../../cerebri/boards/posix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/platforms/multicopters/" class="md-nav__link">
+      <a href="../../../cerebri/platforms/multicopters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -530,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/platforms/rovers/" class="md-nav__link">
+      <a href="../../../cerebri/platforms/rovers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/corti/corti/" class="md-nav__link">
+      <a href="../../../cranium/corti/corti/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/oculi/oculi/" class="md-nav__link">
+      <a href="../../../cranium/oculi/oculi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/pari/pari/" class="md-nav__link">
+      <a href="../../../cranium/pari/pari/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -661,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/tempi/tempi/" class="md-nav__link">
+      <a href="../../../cranium/tempi/tempi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/synapse/synapse/" class="md-nav__link">
+      <a href="../../../cranium/synapse/synapse/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/compute/navqplus/setup/" class="md-nav__link">
+      <a href="../../../cranium/compute/navqplus/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/launch/" class="md-nav__link">
+      <a href="../../../dream/launch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/models/models/" class="md-nav__link">
+      <a href="../../../dream/models/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/worlds/worlds/" class="md-nav__link">
+      <a href="../../../dream/worlds/worlds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -955,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="electrode/joystick/" class="md-nav__link">
+      <a href="../../../electrode/joystick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -975,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="electrode/rviz2/" class="md-nav__link">
+      <a href="../../../electrode/rviz2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,7 +1030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="helmet/install/" class="md-nav__link">
+      <a href="../../../helmet/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="helmet/docker/docker/" class="md-nav__link">
+      <a href="../../../helmet/docker/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/hcdf/hcdf/" class="md-nav__link">
+      <a href="../../../tools/hcdf/hcdf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1141,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/pyecca/pyecca/" class="md-nav__link">
+      <a href="../../../tools/pyecca/pyecca/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1166,18 +1158,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -1191,7 +1185,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Spinali
@@ -1204,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spinali/canfd/" class="md-nav__link">
+      <a href="../../canfd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1224,7 +1218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spinali/sensors/sensors/" class="md-nav__link">
+      <a href="../../sensors/sensors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1242,9 +1236,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="spinali/actuators/actuators/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1253,6 +1256,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1379,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/rddrone/rddrone/" class="md-nav__link">
+      <a href="../../../example_systems/rddrone/rddrone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1399,7 +1403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/rddrone/simulation/" class="md-nav__link">
+      <a href="../../../example_systems/rddrone/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1507,7 +1511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/buggy_3/buggy_3/" class="md-nav__link">
+      <a href="../../../example_systems/buggy_3/buggy_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1527,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/buggy_3/simulation/" class="md-nav__link">
+      <a href="../../../example_systems/buggy_3/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1591,7 +1595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/el_mandadero/el_mandadero/" class="md-nav__link">
+      <a href="../../../example_systems/el_mandadero/el_mandadero/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/el_mandadero/simulation/" class="md-nav__link">
+      <a href="../../../example_systems/el_mandadero/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1675,7 +1679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/minimando/minimando/" class="md-nav__link">
+      <a href="../../../example_systems/minimando/minimando/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1695,7 +1699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/minimando/simulation/" class="md-nav__link">
+      <a href="../../../example_systems/minimando/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1774,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resources/contact/" class="md-nav__link">
+      <a href="../../../resources/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1794,7 +1798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resources/contribute/" class="md-nav__link">
+      <a href="../../../resources/contribute/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2062,8 +2066,7 @@
   
 
 
-<h1 id="cognipilot-developers-guide">CogniPilot Developers Guide</h1>
-<p>To get started see <a href="getting_started/docker_sim/">Docker Simulation Tutorial</a></p>
+<h1 id="actuators-overview">Actuators Overview</h1>
 
 
 
@@ -2122,10 +2125,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>

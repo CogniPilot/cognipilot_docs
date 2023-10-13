@@ -12,23 +12,25 @@
         <meta name="author" content="CogniPilot Foundation">
       
       
-        <link rel="canonical" href="https://cognipilot.org/">
+        <link rel="canonical" href="https://cognipilot.org/getting_started/docker_sim/">
       
       
+        <link rel="prev" href="../install/">
       
-        <link rel="next" href="getting_started/install/">
+      
+        <link rel="next" href="../../cerebri/zephyr/zephyr/">
       
       
-      <link rel="icon" href="assets/CogniPilotLogoFavicon.png">
+      <link rel="icon" href="../../assets/CogniPilotLogoFavicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.5">
     
     
       
-        <title>Dev Guide</title>
+        <title>Docker Simulation - Dev Guide</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6a10b989.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6a10b989.min.css">
       
       
 
@@ -47,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="stylesheets/cognipilot-palette.css">
+      <link rel="stylesheet" href="../../stylesheets/cognipilot-palette.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cognipilot-developers-guide" class="md-skip">
+        <a href="#docker-simulation-tutorial" class="md-skip">
           Skip to content
         </a>
       
@@ -91,9 +93,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../.." title="Dev Guide" class="md-header__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Docker Simulation
             
           </span>
         </div>
@@ -194,9 +196,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
+    <a href="../.." title="Dev Guide" class="md-nav__button md-logo" aria-label="Dev Guide" data-md-component="logo">
       
-  <img src="assets/CogniPilotLogoSite.png" alt="logo">
+  <img src="../../assets/CogniPilotLogoSite.png" alt="logo">
 
     </a>
     Dev Guide
@@ -220,18 +222,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -240,7 +233,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -249,18 +241,20 @@
       
   
   
+    
+  
   
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -274,7 +268,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Getting Started
@@ -287,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting_started/install/" class="md-nav__link">
+      <a href="../install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,9 +299,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="getting_started/docker_sim/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Docker Simulation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -316,6 +330,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ssh-keys-on-host" class="md-nav__link">
+    Setup SSH keys on Host
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-docker" class="md-nav__link">
+    Setup Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-docker-environment" class="md-nav__link">
+    Configure Your Docker Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlock-your-ssh-key" class="md-nav__link">
+    Unlock your SSH Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-mrbuggy3-sitl" class="md-nav__link">
+    Build MrBuggy3 SITL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-jupyterlab-if-you-want" class="md-nav__link">
+    Start JupyterLab (if you want)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-a-bash-terminal" class="md-nav__link">
+    Start a Bash Terminal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mrbuggy3-sitl-in-jupyterlab-terminal-or-bash-directly" class="md-nav__link">
+    Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-a-mode" class="md-nav__link">
+    Select a Mode:
+  </a>
+  
+    <nav class="md-nav" aria-label="Select a Mode:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-mode" class="md-nav__link">
+    Manual Mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nav2-cmd_vel-mode" class="md-nav__link">
+    Nav2 (cmd_vel) Mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mode" class="md-nav__link">
+    Auto Mode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arming" class="md-nav__link">
+    Arming
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -370,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/zephyr/zephyr/" class="md-nav__link">
+      <a href="../../cerebri/zephyr/zephyr/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
+      <a href="../../cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/boards/posix/" class="md-nav__link">
+      <a href="../../cerebri/boards/posix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/platforms/multicopters/" class="md-nav__link">
+      <a href="../../cerebri/platforms/multicopters/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -530,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cerebri/platforms/rovers/" class="md-nav__link">
+      <a href="../../cerebri/platforms/rovers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/corti/corti/" class="md-nav__link">
+      <a href="../../cranium/corti/corti/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/oculi/oculi/" class="md-nav__link">
+      <a href="../../cranium/oculi/oculi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/pari/pari/" class="md-nav__link">
+      <a href="../../cranium/pari/pari/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -661,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/tempi/tempi/" class="md-nav__link">
+      <a href="../../cranium/tempi/tempi/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/synapse/synapse/" class="md-nav__link">
+      <a href="../../cranium/synapse/synapse/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="cranium/compute/navqplus/setup/" class="md-nav__link">
+      <a href="../../cranium/compute/navqplus/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -852,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/launch/" class="md-nav__link">
+      <a href="../../dream/launch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/models/models/" class="md-nav__link">
+      <a href="../../dream/models/models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -892,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="dream/worlds/worlds/" class="md-nav__link">
+      <a href="../../dream/worlds/worlds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -955,7 +1100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="electrode/joystick/" class="md-nav__link">
+      <a href="../../electrode/joystick/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -975,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="electrode/rviz2/" class="md-nav__link">
+      <a href="../../electrode/rviz2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1038,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="helmet/install/" class="md-nav__link">
+      <a href="../../helmet/install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +1203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="helmet/docker/docker/" class="md-nav__link">
+      <a href="../../helmet/docker/docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/hcdf/hcdf/" class="md-nav__link">
+      <a href="../../tools/hcdf/hcdf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1141,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tools/pyecca/pyecca/" class="md-nav__link">
+      <a href="../../tools/pyecca/pyecca/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1204,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spinali/canfd/" class="md-nav__link">
+      <a href="../../spinali/canfd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1224,7 +1369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spinali/sensors/sensors/" class="md-nav__link">
+      <a href="../../spinali/sensors/sensors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1244,7 +1389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="spinali/actuators/actuators/" class="md-nav__link">
+      <a href="../../spinali/actuators/actuators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1379,7 +1524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/rddrone/rddrone/" class="md-nav__link">
+      <a href="../../example_systems/rddrone/rddrone/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1399,7 +1544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/rddrone/simulation/" class="md-nav__link">
+      <a href="../../example_systems/rddrone/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1507,7 +1652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/buggy_3/buggy_3/" class="md-nav__link">
+      <a href="../../example_systems/buggy_3/buggy_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1527,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/buggy_3/simulation/" class="md-nav__link">
+      <a href="../../example_systems/buggy_3/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1591,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/el_mandadero/el_mandadero/" class="md-nav__link">
+      <a href="../../example_systems/el_mandadero/el_mandadero/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1611,7 +1756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/el_mandadero/simulation/" class="md-nav__link">
+      <a href="../../example_systems/el_mandadero/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1675,7 +1820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/minimando/minimando/" class="md-nav__link">
+      <a href="../../example_systems/minimando/minimando/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1695,7 +1840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="example_systems/minimando/simulation/" class="md-nav__link">
+      <a href="../../example_systems/minimando/simulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1774,7 +1919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resources/contact/" class="md-nav__link">
+      <a href="../../resources/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1794,7 +1939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resources/contribute/" class="md-nav__link">
+      <a href="../../resources/contribute/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2046,6 +2191,125 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-ssh-keys-on-host" class="md-nav__link">
+    Setup SSH keys on Host
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-docker" class="md-nav__link">
+    Setup Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-docker-environment" class="md-nav__link">
+    Configure Your Docker Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlock-your-ssh-key" class="md-nav__link">
+    Unlock your SSH Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-mrbuggy3-sitl" class="md-nav__link">
+    Build MrBuggy3 SITL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-jupyterlab-if-you-want" class="md-nav__link">
+    Start JupyterLab (if you want)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-a-bash-terminal" class="md-nav__link">
+    Start a Bash Terminal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mrbuggy3-sitl-in-jupyterlab-terminal-or-bash-directly" class="md-nav__link">
+    Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation" class="md-nav__link">
+    Simulation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select-a-mode" class="md-nav__link">
+    Select a Mode:
+  </a>
+  
+    <nav class="md-nav" aria-label="Select a Mode:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-mode" class="md-nav__link">
+    Manual Mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nav2-cmd_vel-mode" class="md-nav__link">
+    Nav2 (cmd_vel) Mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-mode" class="md-nav__link">
+    Auto Mode
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arming" class="md-nav__link">
+    Arming
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2062,8 +2326,93 @@
   
 
 
-<h1 id="cognipilot-developers-guide">CogniPilot Developers Guide</h1>
-<p>To get started see <a href="getting_started/docker_sim/">Docker Simulation Tutorial</a></p>
+<h1 id="docker-simulation-tutorial">Docker Simulation Tutorial</h1>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Ubuntu 22.04 host environment</li>
+</ul>
+<p>This may work on other environments but only Ubuntu 22.04 is officially supported.</p>
+<h2 id="setup-ssh-keys-on-host">Setup SSH keys on Host</h2>
+<ul>
+<li>Ensure that you have setup ssh keys on your host computer to be able to clone the CogniPilot repositories: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh">Connecting to GitHub with SSH</a></li>
+</ul>
+<h2 id="setup-docker">Setup Docker</h2>
+<ul>
+<li>Install Docker engine for Ubuntu <a href="https://docs.docker.com/engine/install/ubuntu/">Docker Engine Install</a></li>
+</ul>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>** Don't forget: <a href="https://docs.docker.com/engine/install/linux-postinstall/">Linux Post Install</a>**</p>
+</div>
+<pre><code class="language-bash">git clone git@github.com:CogniPilot/docker
+cd docker/dream
+./dream start
+</code></pre>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>** Rendering for Nivida Graphics Cards **: To run gazebo with an Nvidia graphics card you should install the <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html">NVidia Container Toolkit</a>.</p>
+</div>
+<h2 id="configure-your-docker-environment">Configure Your Docker Environment</h2>
+<p>The config script will ask you a few questions and create a docker-compose.ovverrides.yml
+that will be used when running your container.</p>
+<p>You will be asked about your graphics card, ssh, and gpg keys etc. Default answers are in
+brackets.</p>
+<pre><code class="language-bash">cd docker/dream
+./dream config
+</code></pre>
+<h2 id="unlock-your-ssh-key">Unlock your SSH Key</h2>
+<pre><code class="language-bash">./dream exec unlock
+</code></pre>
+<h2 id="build-mrbuggy3-sitl">Build MrBuggy3 SITL</h2>
+<pre><code class="language-bash">./dream exec build_mrbuggy3_sitl
+</code></pre>
+<h2 id="start-jupyterlab-if-you-want">Start JupyterLab (if you want)</h2>
+<pre><code class="language-bash">./dream exec cyecca
+</code></pre>
+<h2 id="start-a-bash-terminal">Start a Bash Terminal</h2>
+<pre><code class="language-bash">./dream exec
+</code></pre>
+<h2 id="run-mrbuggy3-sitl-in-jupyterlab-terminal-or-bash-directly">Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)</h2>
+<pre><code class="language-bash">ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py
+</code></pre>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>If running on a machine with a limited graphics card use:</strong></p>
+</div>
+<pre><code class="language-bash">ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py world:=basic_map
+</code></pre>
+<h2 id="simulation">Simulation</h2>
+<p>Example of simulation running.</p>
+<p><img alt="MRBuggy3 Depot world simulation" src="../data/mrbuggy3_depot.png" title="MRBuggy3 Depot world simulation" /></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Use a joystick controller (<a href="https://www.amazon.com/Logitech-940-000110-Gamepad-F310/dp/B003VAHYQY/">Logitech F310</a> suggested) to control vehicle modes.</strong></p>
+</div>
+<h2 id="select-a-mode">Select a Mode:</h2>
+<p><img alt="F310" src="../data/f310.jpg" title="F310" /></p>
+<ul>
+<li><strong>A</strong>: manual</li>
+<li><strong>X</strong>: cmd_vel (nav2)</li>
+<li><strong>B</strong>: auto (corti)</li>
+</ul>
+<h3 id="manual-mode">Manual Mode:</h3>
+<ul>
+<li><strong>Left stick</strong> Up/Down: throttle</li>
+<li><strong>Right stick</strong> Left/Right: steering</li>
+</ul>
+<h3 id="nav2-cmd_vel-mode">Nav2 (cmd_vel) Mode:</h3>
+<ul>
+<li>Click <strong>2D Pose Goal</strong> and select desired location on RVIZ2 map.</li>
+</ul>
+<h3 id="auto-mode">Auto Mode</h3>
+<ul>
+<li>Click <strong>2D Pose Goal</strong> and select desired location on RVIZ2 map.</li>
+</ul>
+<h2 id="arming">Arming</h2>
+<ul>
+<li><strong>START</strong>: arm</li>
+<li><strong>BACK</strong>: disarm</li>
+</ul>
 
 
 
@@ -2122,10 +2471,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
