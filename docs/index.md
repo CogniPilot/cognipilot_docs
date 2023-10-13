@@ -1,14 +1,11 @@
 # CogniPilot Developers Guide
 
 
-Releases:
-
-
+## **Releases**
 | Name  |Release Date | EOL Date |
 |-------|-------------|----------|
 |  [<img src='releases/airy/assets/airy-name.png' width='200'>](releases/airy) | Oct. 2023 | Oct 2024 |
 | [B (Mythical TBD)](releases/b-mythical) | TBD | TBD |
-
 
 
 ## Road Map

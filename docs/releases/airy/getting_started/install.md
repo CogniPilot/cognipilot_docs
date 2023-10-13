@@ -6,6 +6,10 @@
 
 This may work on other environments but only Ubuntu 22.04 is officially supported.
 
+## Docker Option
+
+If you wish, there is a [docker container](https://github.com/CogniPilot/docker) that is a dev environment for CogniPilot with Nvidia GPU support. If you use this option, do not run the native\_install script, as the packages are already installed.
+
 ## Setup SSH keys on Host and GitHub
 
 * Ensure that you have setup ssh keys on your host computer and GitHub to be able to clone the CogniPilot repositories: [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
@@ -28,11 +32,30 @@ cd ~/cognipilot
 git clone git@github.com:cognipilot/helmet
 ```
 
-## Run Install Script
+## Run Install Script (If not using docker)
 
 ```bash
 ~/cognipilot/helmet/install/native_install.sh
 . ~/.profile
+```
+
+## SITL Convenience Script
+
+```bash
+build_mrbuggy3_sitl
+```
+
+This command is running the [following script](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/build_mrbuggy3_sitl).
+
+This script does the following:
+
+ * Sets up the vcs workspaces based on yaml files provided in helmet.
+ * Builds the cranium ROS2 workspace
+ * Builds Cerebri native\_posix software-in-the-loop simuliation
+ * Builds Cyecca (control/estimation software)
+ * Builds Electrode (ground station software)
+
+```bash
 ```
 
 ## Start JupyterLab (if you want)
