@@ -554,6 +554,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker-option" class="md-nav__link">
+    Docker Option
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup-ssh-keys-on-host-and-github" class="md-nav__link">
     Setup SSH keys on Host and GitHub
   </a>
@@ -582,8 +589,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-install-script" class="md-nav__link">
-    Run Install Script
+  <a href="#run-install-script-if-not-using-docker" class="md-nav__link">
+    Run Install Script (If not using docker)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sitl-convenience-script" class="md-nav__link">
+    SITL Convenience Script
   </a>
   
 </li>
@@ -863,6 +877,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker-option" class="md-nav__link">
+    Docker Option
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#setup-ssh-keys-on-host-and-github" class="md-nav__link">
     Setup SSH keys on Host and GitHub
   </a>
@@ -891,8 +912,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-install-script" class="md-nav__link">
-    Run Install Script
+  <a href="#run-install-script-if-not-using-docker" class="md-nav__link">
+    Run Install Script (If not using docker)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sitl-convenience-script" class="md-nav__link">
+    SITL Convenience Script
   </a>
   
 </li>
@@ -983,6 +1011,8 @@
 <li>Ubuntu 22.04 host environment</li>
 </ul>
 <p>This may work on other environments but only Ubuntu 22.04 is officially supported.</p>
+<h2 id="docker-option">Docker Option</h2>
+<p>If you wish, there is a <a href="https://github.com/CogniPilot/docker">docker container</a> that is a dev environment for CogniPilot with Nvidia GPU support. If you use this option, do not run the native_install script, as the packages are already installed.</p>
 <h2 id="setup-ssh-keys-on-host-and-github">Setup SSH keys on Host and GitHub</h2>
 <ul>
 <li>Ensure that you have setup ssh keys on your host computer and GitHub to be able to clone the CogniPilot repositories: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh">Connecting to GitHub with SSH</a></li>
@@ -999,10 +1029,23 @@
 cd ~/cognipilot
 git clone git@github.com:cognipilot/helmet
 </code></pre>
-<h2 id="run-install-script">Run Install Script</h2>
+<h2 id="run-install-script-if-not-using-docker">Run Install Script (If not using docker)</h2>
 <pre><code class="language-bash">~/cognipilot/helmet/install/native_install.sh
 . ~/.profile
 </code></pre>
+<h2 id="sitl-convenience-script">SITL Convenience Script</h2>
+<pre><code class="language-bash">build_mrbuggy3_sitl
+</code></pre>
+<p>This command is running the <a href="https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/build_mrbuggy3_sitl">following script</a>.</p>
+<p>This script does the following:</p>
+<ul>
+<li>Sets up the vcs workspaces based on yaml files provided in helmet.</li>
+<li>Builds the cranium ROS2 workspace</li>
+<li>Builds Cerebri native_posix software-in-the-loop simuliation</li>
+<li>Builds Cyecca (control/estimation software)</li>
+<li>Builds Electrode (ground station software)</li>
+</ul>
+<pre><code class="language-bash"></code></pre>
 <h2 id="start-jupyterlab-if-you-want">Start JupyterLab (if you want)</h2>
 <pre><code class="language-bash">cyecca
 </code></pre>
