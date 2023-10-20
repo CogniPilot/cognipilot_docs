@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cognipilot.org/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/cerebri/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/cerebri/boards/nxp_vmu_rt1170/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/cranium/compute/navqplus/setup/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/getting_started/install/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/releases/airy/getting_started/advanced/docker/</loc>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/b-mythical/</loc>
-         <lastmod>2023-10-13</lastmod>
+         <lastmod>2023-10-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
