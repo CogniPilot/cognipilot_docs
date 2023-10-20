@@ -10,7 +10,7 @@ Next create and activate the poetry virtual environment:
 
 ```bash
 poetry install
-poetry bash
+poetry shell
 ```
 
 ## Make Docs and Serve

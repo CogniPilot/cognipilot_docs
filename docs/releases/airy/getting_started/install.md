@@ -6,10 +6,6 @@
 
 This may work on other environments but only Ubuntu 22.04 is officially supported.
 
-## Docker Option
-
-If you wish, there is a development docker container ([docker hub](https://hub.docker.com/r/cognipilot/dream), [docker source](https://github.com/CogniPilot/docker)) for CogniPilot with Nvidia GPU support. If you use this option, do not run the native\_install script, as the packages are already installed.
-
 ## Setup SSH keys on Host and GitHub
 
 * Ensure that you have setup ssh keys on your host computer and GitHub to be able to clone the CogniPilot repositories: [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
@@ -23,6 +19,10 @@ If you wish, there is a development docker container ([docker hub](https://hub.d
 ```bash
 sudo apt install git
 ```
+
+## Docker Option
+
+If you wish, there is a [Docker Development Container](advanced/docker.md) that may be used.
 
 ## Clone Helmet
 
@@ -39,15 +39,17 @@ git clone git@github.com:cognipilot/helmet
 . ~/.profile
 ```
 
-## SITL Convenience Script
+## Convenience Scripts
+
+### build\_mrbuggy3\_sitl
 
 ```bash
 build_mrbuggy3_sitl
 ```
 
-This command is running the [following script](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/build_mrbuggy3_sitl).
+This command executes the script [build\_mrbuggy3\_sitl](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/build_mrbuggy3_sitl).
 
-This script does the following:
+This script:
 
  * Sets up the vcs workspaces based on yaml files provided in helmet.
  * Builds the cranium ROS 2 workspace
@@ -55,14 +57,29 @@ This script does the following:
  * Builds Cyecca (control/estimation software)
  * Builds Electrode (ground station software)
 
+### docs
+
 ```bash
+docs
 ```
 
-## Start JupyterLab (if you want)
+This command executes the script [docs](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/docs).
+
+This script:
+
+* Downloads and builds the documentation repository for the documentation you are reading so that contributions can be made easily.
+
+
+### cyecca
 
 ```bash
 cyecca
 ```
+
+This script:
+
+* Starts a JupyterLab instance for Cyecca to aid in developing algorithms.
+
 
 ## Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
 
