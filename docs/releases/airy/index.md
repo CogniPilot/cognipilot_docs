@@ -36,6 +36,6 @@ CogniPilot's upcoming release, to be named, but going by B-Mythical (a mythical 
 * Ubuntu 22.04
 * Zephyr RTOS 3.5
 * ROS 2 Humble
-* Gazebo Harmonic
+* Gazebo Garden
 
 To get started see [Install](./getting_started/install.md)
