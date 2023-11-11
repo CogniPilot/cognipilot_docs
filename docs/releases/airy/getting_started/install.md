@@ -41,13 +41,13 @@ git clone git@github.com:cognipilot/helmet
 
 ## Convenience Scripts
 
-### build\_mrbuggy3\_sitl
+### build\_b3rb\_SIL
 
 ```bash
-build_mrbuggy3_sitl
+build_b3rb_sil
 ```
 
-This command executes the script [build\_mrbuggy3\_sitl](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/build_mrbuggy3_sitl).
+This command executes the script [build\_b3rb\_SIL](https://github.com/CogniPilot/helmet/blob/77585804ac03f9911f52c6e9b3da7e4e363d1cf7/install/resources/build_b3rb_sil).
 
 This script:
 
@@ -63,7 +63,7 @@ This script:
 docs
 ```
 
-This command executes the script [docs](https://github.com/CogniPilot/helmet/blob/398e99d98c1a9aabef663ad601d3ac5c141b54f2/install/resources/docs).
+This command executes the script [docs](https://github.com/CogniPilot/helmet/blob/77585804ac03f9911f52c6e9b3da7e4e363d1cf7/install/resources/docs).
 
 This script:
 
@@ -81,26 +81,26 @@ This script:
 * Starts a JupyterLab instance for Cyecca to aid in developing algorithms.
 
 
-## Run MrBuggy3 SITL (in JupyterLab terminal or Bash directly)
+## Run B3RB SIL (in JupyterLab terminal or Bash directly)
 
 ```bash
-ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py
+ros2 launch b3rb_gz_bringup sil.launch.py
 ```
 
 !!! attention
     **If running on a machine with a limited graphics card use:**
 ```bash
-ros2 launch mrbuggy3_gz_bringup gz_nav2.launch.py world:=basic_map
+ros2 launch b3rb_gz_bringup sil.launch.py world:=basic_map
 ```
 
 ## Simulation
 
 Example of simulation running.
 
-![MRBuggy3 Depot world simulation](data/mrbuggy3_depot.png "MRBuggy3 Depot world simulation")
+![B3RB Depot world simulation](data/b3rb_depot.png "B3RB Depot world simulation")
 
 !!! attention
-    **Use a joystick controller ([Logitech F310](https://www.amazon.com/Logitech-940-000110-Gamepad-F310/dp/B003VAHYQY/) suggested) to control vehicle modes.**
+    **Use a joystick controller ([Logitech F310](https://www.logitechg.com/en-us/products/gamepads/f310-gamepad.940-000110.html) suggested) to control vehicle modes.**
 
 ## Select a Mode:
 
@@ -108,7 +108,7 @@ Example of simulation running.
 
 * **A**: manual
 * **X**: cmd_vel (nav2)
-* **B**: auto (corti)
+* **B**: auto (nav2)
 
 ### Manual Mode:
 

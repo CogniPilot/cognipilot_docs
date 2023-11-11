@@ -16,23 +16,23 @@ CogniPilot is not aiming to re-invent an opensource autopilot that can be a drop
 
   * **Deprecate if No-longer Maintained**: On each release cycle, the CogniPilot technical steering committee (TSC) will make a decision on whether to maintain official support for each vehicle platform or whether to adopt a new platform. This is to combat the slow creep in lines of code due to vehicle specific edge cases. 
 
-# Currently supported platforms:
+## Currently supported platforms:
 
-## Rover
-   * MrBuggy3
+### Rover
+   * B3RB
    * ELM4
 
 CogniPilot's upcoming release, to be named, but going by B-Mythical (a mythical creature with a name starting with B) will have planned additional support for:
 
-## Mulirotor
+### Mulirotor
    * NXP RDDrone
    * TBD
-## Submersible
+### Submersible
    * TBD
-## Plane
+### Plane
    * TBD
 
-# Software Stack
+## Software Stack
 * Ubuntu 22.04
 * Zephyr RTOS 3.5
 * ROS 2 Humble
