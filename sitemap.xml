@@ -2,42 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cognipilot.org/</loc>
-         <lastmod>2023-10-28</lastmod>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cerebri/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cerebri/boards/nxp_mr_canhubk3/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cerebri/boards/nxp_vmu_rt1170/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cerebri/platforms/multicopters/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cerebri/platforms/rovers/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cranium/compute/navqplus/setup/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cranium/corti/corti/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/cranium/synapse/synapse/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/dream/worlds/worlds/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/electrode/joystick/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/electrode/rviz2/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/helmet/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/b3rb/buggy3_revb/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/b3rb/simulation/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/elm4/el_mandadero/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/elm4/simulation/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/melm/minimando/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/melm/simulation/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/rddrone/rddrone/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/reference_systems/rddrone/simulation/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/</loc>
-         <lastmod>2023-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/releases/airy/cerebri/</loc>
-         <lastmod>2023-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/releases/airy/cerebri/boards/nxp_vmu_rt1170/</loc>
-         <lastmod>2023-10-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cognipilot.org/releases/airy/cranium/compute/navqplus/setup/</loc>
-         <lastmod>2023-10-28</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/getting_started/install/</loc>
-         <lastmod>2023-10-28</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/airy/getting_started/advanced/docker/</loc>
-         <lastmod>2023-10-28</lastmod>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognipilot.org/releases/b-mythical/</loc>
-         <lastmod>2023-10-28</lastmod>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/resources/contribute/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/spinali/canfd/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/spinali/actuators/actuators/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/spinali/sensors/sensors/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/tools/hcdf/hcdf/</loc>
+         <lastmod>2023-11-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognipilot.org/tools/pyecca/pyecca/</loc>
+         <lastmod>2023-11-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
