@@ -1,1 +1,0 @@
-# RDDRONE Platform Overview

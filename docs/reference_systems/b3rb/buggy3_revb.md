@@ -1,1 +1,0 @@
-# Buggy 3 Platform Overview

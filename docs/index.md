@@ -1,10 +1,13 @@
-# CogniPilot Developers Guide
+# CogniPilot Release Overview
 
 
 ## **Releases**
+
+To learn more and access the documentation please select a release.
+
 | Name  |Release Date | EOL Date |
 |-------|-------------|----------|
-|  [<img src='releases/airy/assets/airy-name.png' width='200'>](releases/airy) | Oct. 2023 | Oct 2024 |
+|  [<img src='releases/airy/assets/airy-name.png' width='200'>](https://airy.cognipilot.org/) | Oct. 2023 | Oct 2024 |
 | [B (Mythical TBD)](releases/b-mythical) | TBD | TBD |
 
 

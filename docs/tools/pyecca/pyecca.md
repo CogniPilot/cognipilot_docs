@@ -1,1 +1,0 @@
-# Pyecca Overview

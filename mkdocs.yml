@@ -1,4 +1,4 @@
-site_name: Dev Guide
+site_name: Release Overview
 site_description: 'Development guides for CogniPilot'
 site_author: 'CogniPilot Foundation'
 site_url: 'https://cognipilot.org'
@@ -47,53 +47,8 @@ plugins:
 nav:
     - Home: index.md
     - Releases:
-      - Airy:
-        - About Airy: releases/airy/index.md
-        - Getting Started: releases/airy/getting_started/install.md
+      - Airy: "https://airy.cognipilot.org/"
       - B Mythical: releases/b-mythical/index.md
-    - Cerebri:
-      - About: cerebri/index.md
-      - Boards:
-        - NXP® VMU RT1170: cerebri/boards/nxp_vmu_rt1170.md
-        - NXP® MR CANHUBK3: cerebri/boards/nxp_mr_canhubk3.md
-      - Platforms:
-        - MultiCopters: cerebri/platforms/multicopters.md
-        - Rovers: cerebri/platforms/rovers.md
-    - Cranium:
-      - Corti: cranium/corti/corti.md
-      - Synapse: cranium/synapse/synapse.md
-      - Compute Hardware:
-        - NXP® NavQPlus:
-          - Setup: cranium/compute/navqplus/setup.md
-    - Dream:
-      - Worlds: dream/worlds/worlds.md
-    - Electrode:
-      - Joystick: electrode/joystick.md
-      - RVIZ 2: electrode/rviz2.md
-    - Helmet:
-      - About: helmet/index.md
-    - Tools:
-#      - HCDF: tools/hcdf/hcdf.md
-      - Pyecca: tools/pyecca/pyecca.md
-#    - Spinali:
-#      - CANFD: spinali/canfd.md
-#      - Sensors: spinali/sensors/sensors.md
-#      - Actuators: spinali/actuators/actuators.md
-    - Reference Systems:
-      - MultiCopters:
-        - RDDRONE:
-          - Hardware: reference_systems/rddrone/rddrone.md
-          - Simulation: reference_systems/rddrone/simulation.md
-      - Rovers:
-        - B3RB:
-          - Hardware: reference_systems/b3rb/buggy3_revb.md
-          - Simulation: reference_systems/b3rb/simulation.md
-        - ELM4:
-          - Hardware: reference_systems/elm4/el_mandadero.md
-          - Simulation: reference_systems/elm4/simulation.md
-#        - MELM:
-#          - Hardware: reference_systems/melm/minimando.md
-#          - Simulation: reference_systems/melm/simulation.md
     - Resources:
       - Contribute: resources/contribute.md
       - CogniPilot Foundation: "https://www.cognipilot.com"
