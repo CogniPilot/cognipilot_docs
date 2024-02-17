@@ -51,6 +51,8 @@ nav:
       - B Mythical: releases/b-mythical/index.md
     - Resources:
       - Contribute: resources/contribute.md
+      - Hardware:
+        - Tropic: resources/hardware/tropic.md
       - CogniPilot Foundation: "https://www.cognipilot.com"
     - Contributors:
       - Companies:
